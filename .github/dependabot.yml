@@ -4,12 +4,17 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
   - package-ecosystem: npm
     directory: "/javascript"
     schedule:
       interval: "weekly"
-  - package-ecosystem: bundler
-    directory: "/ruby"
-    schedule:
-      interval: "weekly"
+    allow:
+      - dependency-name: "@orolabs/oro-ui-toolkit"
+    registries:
+      - github
+registries:
+  github:
+    type: "npm-registry"
+    url: "https://npm.pkg.github.com"
+    token: "${{ secrets.DEPENDABOT_GITHUB_TOKEN }}"
