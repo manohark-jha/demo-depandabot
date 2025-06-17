@@ -1,14 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "cron"
-      time: "*/1 * * * *"   # Every minute
   - package-ecosystem: "npm"
     directory: "/javascript"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     allow:
       - dependency-name: "@orolabs/oro-ui-toolkit"
     registries:
