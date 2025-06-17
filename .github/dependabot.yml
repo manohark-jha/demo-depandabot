@@ -6,8 +6,6 @@ updates:
       interval: "live"
   - package-ecosystem: "npm"
     directory: "/javascript"
-    schedule:
-      interval: "weekly"
     allow:
       - dependency-name: "@orolabs/oro-ui-toolkit"
     registries:
