@@ -12,4 +12,4 @@ registries:
   github:
     type: "npm-registry"
     url: "https://npm.pkg.github.com"
-    token: "${{ secrets.DEPENDABOT_GITHUB_TOKEN }}"
+    token: "//npm.pkg.github.com/:_authToken=${{ secrets.DEPENDABOT_GITHUB_TOKEN }}"
