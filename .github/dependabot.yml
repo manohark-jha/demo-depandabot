@@ -1,7 +1,7 @@
 version: 2
 registries:
   github:
-    type: npm-registry    #commitsd
+    type: npm-registry    #commits
     url: https://npm.pkg.github.com
     token: ${{ secrets.DEPENDABOT_GITHUB_TOKEN }}
 updates:
