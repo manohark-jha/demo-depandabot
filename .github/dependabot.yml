@@ -1,7 +1,7 @@
 version: 2
 registries:
   github:
-    type: npm-registry    #commits
+    type: npm-registry
     url: https://npm.pkg.github.com
     token: ${{ secrets.DEPENDABOT_GITHUB_TOKEN }}
 updates:
@@ -13,3 +13,4 @@ updates:
       - dependency-name: "@orolabs/oro-ui-toolkit"
     registries:
       - github
+    open-pull-requests-limit: 5
